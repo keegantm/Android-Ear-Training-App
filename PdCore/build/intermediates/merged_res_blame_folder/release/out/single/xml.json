@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/xml/preferences.xml",
+        "source": "org.puredata.android.service.PdCore-main-9:/xml/preferences.xml"
+    }
+]

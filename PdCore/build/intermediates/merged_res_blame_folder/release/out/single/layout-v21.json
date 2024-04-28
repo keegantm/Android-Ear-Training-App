@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/layout-v21/notification_action_tombstone.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/layout-v21/notification_template_icon_group.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/layout-v21/notification_template_custom_big.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/layout-v21/notification_action.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/layout-v21/notification_action.xml"
+    }
+]

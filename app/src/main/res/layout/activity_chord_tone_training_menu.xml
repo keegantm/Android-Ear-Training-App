@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_background"
+    tools:context=".ChordToneTrainingFiles.ChordToneTrainingMenuActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/title_background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+            android:id="@+id/mainMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chord_tone_identification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30sp"
+            android:textColor="@color/text_and_border"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+
+    <!-- Dividing Line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/text_and_border"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:fillViewport="true"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintBottom_toTopOf="@id/chordToneOptionsButton"
+        >
+
+        <TextView
+            android:id="@+id/activityDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/chord_tone_instructions"
+            android:textColor="@color/text_and_border"
+            android:textSize="18sp"
+            />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/chordToneOptionsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/optionsButtonLabel"
+        app:layout_constraintBottom_toTopOf="@+id/chordToneStartActivityButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="40dp"
+        app:cornerRadius="2dp"
+        android:backgroundTint="@color/button_blue"
+        android:textColor="@color/text_and_border"
+        />
+
+    <Button
+        android:id="@+id/chordToneStartActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startActivityLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chordToneOptionsButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="40dp"
+        app:cornerRadius="2dp"
+        android:backgroundTint="@color/button_blue"
+        android:textColor="@color/text_and_border"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+array inchannels_labels
+array inchannels_values
+array outchannels_labels
+array outchannels_values
+array srate_labels
+array srate_values
+drawable icon
+raw extra_abs
+raw silence
+string pref_key_inchannels
+string pref_key_outchannels
+string pref_key_srate
+string pref_sum
+string pref_sum_inchannels
+string pref_sum_outchannels
+string pref_sum_srate
+string pref_title
+string pref_title_inchannels
+string pref_title_outchannels
+string pref_title_srate
+style DisableSoundEffects
+xml preferences

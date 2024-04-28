@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable/notification_bg_low.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable/notification_tile_bg.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable/notification_bg.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable/notification_icon_background.xml",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable/icon.png",
+        "source": "org.puredata.android.service.PdCore-main-9:/drawable/icon.png"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable/din5.png",
+        "source": "org.puredata.android.service.PdCore-midi-1.0.0-rc1-2:/drawable/din5.png"
+    }
+]

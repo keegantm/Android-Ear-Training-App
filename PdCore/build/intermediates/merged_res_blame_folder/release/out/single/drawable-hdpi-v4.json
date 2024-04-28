@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable-hdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable-hdpi-v4/notification_bg_normal.9.png",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable-hdpi-v4/notification_bg_low_normal.9.png",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "org.puredata.android.service.PdCore-core-1.0.0-1:/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    }
+]

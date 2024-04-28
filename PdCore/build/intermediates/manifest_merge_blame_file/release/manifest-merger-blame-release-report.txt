@@ -1,0 +1,8 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.puredata.android.service" >
+4
+5    <uses-sdk android:minSdkVersion="28" />
+5-->/Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/AndroidManifest.xml
+6
+7</manifest>

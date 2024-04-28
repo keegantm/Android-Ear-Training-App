@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/body_background"
+    android:padding="20dp"
+
+    >
+
+    <TextView
+        android:id="@+id/incorrectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrect"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/incorrectTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_and_border"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continuetxt"
+        app:cornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctTextView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_and_border"
+        android:backgroundTint="@color/button_blue"
+        />
+
+    <TextView
+        android:id="@+id/incorrectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/correctTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrectTitle"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_and_border"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/correctTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrectTextView"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_and_border"
+        android:gravity="center"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChordToneTrainingFiles.ChordToneOptionsActivity"
+    android:background="@color/body_background"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:background="@color/title_background"
+        >
+
+        <TextView
+            android:id="@+id/mainMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chord_tone_identification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="24sp"
+            android:textColor="@color/text_and_border"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <!-- Dividing Line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/text_and_border"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintBottom_toTopOf="@id/doneButton"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!-- Each nested constraint is in vertical chain -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/selectQuestionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/triadSelectionContainer"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/questionsLabelTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/number_of_questions"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/numberOfQuestionsRadioGroup"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/text_and_border"
+
+                    />
+
+                <RadioGroup
+                    android:id="@+id/numberOfQuestionsRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/questionsLabelTextView">
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/_5"
+                        android:textColor="@color/text_and_border"
+                        app:buttonTint="@color/mini_button_widget"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/_10"
+                        android:textColor="@color/text_and_border"
+                        app:buttonTint="@color/mini_button_widget"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/_15"
+                        android:textColor="@color/text_and_border"
+                        app:buttonTint="@color/mini_button_widget"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/_20"
+                        android:textColor="@color/text_and_border"
+                        app:buttonTint="@color/mini_button_widget"
+
+                        />
+
+                </RadioGroup>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/triadSelectionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/selectQuestionsLayout"
+                app:layout_constraintBottom_toTopOf="@id/staticRootLayout"
+                >
+
+                <TextView
+                    android:id="@+id/triadSelectionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/chords"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/majTriadLabel"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/text_and_border"
+
+                    />
+
+                <TextView
+                    android:id="@+id/majTriadLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/triadSelectionTextView"
+                    app:layout_constraintBottom_toTopOf="@+id/majTriadSwitch"
+                    android:text="@string/major_triad"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/minTriadLabel"
+                    android:textColor="@color/text_and_border"
+
+                    />
+
+                <TextView
+                    android:id="@+id/minTriadLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/minTriadSwitch"
+                    app:layout_constraintTop_toBottomOf="@id/triadSelectionTextView"
+                    android:text="@string/minor_triad"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/majTriadLabel"
+                    android:textColor="@color/text_and_border"
+
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/majTriadSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/triadSelectionTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/minTriadSwitch"
+                    app:thumbTint="@color/switch_thumb_colors"
+                    app:trackTint="@color/switch_track_colors"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/minTriadSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/triadSelectionTextView"
+                    app:layout_constraintStart_toEndOf="@id/majTriadSwitch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:thumbTint="@color/switch_thumb_colors"
+                    app:trackTint="@color/switch_track_colors"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/staticRootLayout"
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/triadSelectionContainer"
+            app:layout_constraintBottom_toTopOf="@+id/majChordToneSelectionLayout">
+
+                <TextView
+                    android:id="@+id/staticRootTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fixed_chord_root_note"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/staticRootSwitch"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/text_and_border"
+
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/staticRootSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/staticRootTextView"
+                    app:thumbTint="@color/switch_thumb_colors"
+                    app:trackTint="@color/switch_track_colors"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/majChordToneSelectionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/minChordToneSelectionLayout"
+                app:layout_constraintTop_toBottomOf="@+id/staticRootLayout">
+
+                <TextView
+                    android:id="@+id/majChordToneSelectionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/major_triad_chord_tones"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/majChordToneRecyclerView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/text_and_border"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/majChordToneRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/majChordToneSelectionTextView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/minChordToneSelectionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/majChordToneSelectionLayout">
+
+                <TextView
+                    android:id="@+id/minChordToneSelectionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/minor_triad_chord_tones"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/minChordToneRecyclerView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/minChordToneRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/minChordToneSelectionTextView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/done"
+        app:cornerRadius="2dp"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/text_and_border"
+        android:backgroundTint="@color/button_blue"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

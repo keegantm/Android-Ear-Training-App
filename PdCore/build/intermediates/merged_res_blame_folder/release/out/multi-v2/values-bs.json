@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.puredata.android.service.PdCore-merged_res-8:/values-bs/values-bs.xml",
+            "map": [
+                {
+                    "source": "/Users/keeganmoseley/.gradle/caches/transforms-3/3ac3e9b967a7379913d13126736a4c40/transformed/core-1.0.0/res/values-bs/values-bs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "org.puredata.android.service.PdCore-mergeReleaseResources-6:/values-bs/values-bs.xml",
+            "map": [
+                {
+                    "source": "/Users/keeganmoseley/.gradle/caches/transforms-3/3ac3e9b967a7379913d13126736a4c40/transformed/core-1.0.0/res/values-bs/values-bs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

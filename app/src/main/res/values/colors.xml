@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#CAF0F8</color>
+    <color name="button_blue">#90D7FD</color>
+    <color name="body_background">#F1F8FE</color>
+    <color name="title_background">#E3F1FD</color>
+    <color name="text_box">#E3F1FD</color>
+    <color name="text_and_border">#252C32</color>
+    <color name="mini_button_widget">#6E86CD</color>
+    <color name="switch_track_activated">#B6C2E6</color>
+    <color name="switch_track_deactivated">#666B6F</color>
+    <color name="menu_card">#EAF5FE</color>
+</resources>

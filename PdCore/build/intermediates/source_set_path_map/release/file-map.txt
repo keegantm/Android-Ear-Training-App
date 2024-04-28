@@ -1,0 +1,11 @@
+org.puredata.android.service.PdCore-media-1.0.0-0 /Users/keeganmoseley/.gradle/caches/transforms-3/00b6a6c640282274e1ffe4b4e2d72579/transformed/media-1.0.0/res
+org.puredata.android.service.PdCore-core-1.0.0-1 /Users/keeganmoseley/.gradle/caches/transforms-3/3ac3e9b967a7379913d13126736a4c40/transformed/core-1.0.0/res
+org.puredata.android.service.PdCore-midi-1.0.0-rc1-2 /Users/keeganmoseley/.gradle/caches/transforms-3/8e22f8316794496a64a4de75c20698d2/transformed/midi-1.0.0-rc1/res
+org.puredata.android.service.PdCore-coordinatorlayout-1.0.0-3 /Users/keeganmoseley/.gradle/caches/transforms-3/df2c2a8eb551390db1fb02a0223df178/transformed/coordinatorlayout-1.0.0/res
+org.puredata.android.service.PdCore-release-4 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/build-types/release/res
+org.puredata.android.service.PdCore-pngs-5 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/build/generated/res/pngs/release
+org.puredata.android.service.PdCore-resValues-6 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/build/generated/res/resValues/release
+org.puredata.android.service.PdCore-mergeReleaseResources-7 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+org.puredata.android.service.PdCore-mergeReleaseResources-8 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+org.puredata.android.service.PdCore-merged_res-9 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/build/intermediates/merged_res/release
+org.puredata.android.service.PdCore-main-10 /Users/keeganmoseley/Desktop/Roux/Mobile_Dev/Android_Pd_Install/pd-for-android/PdCore/src/main/res

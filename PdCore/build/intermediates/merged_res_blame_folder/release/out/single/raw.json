@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/raw/silence.wav",
+        "source": "org.puredata.android.service.PdCore-main-9:/raw/silence.wav"
+    },
+    {
+        "merged": "org.puredata.android.service.PdCore-merged_res-8:/raw/extra_abs.zip",
+        "source": "org.puredata.android.service.PdCore-main-9:/raw/extra_abs.zip"
+    }
+]
